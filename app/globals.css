@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-navy: #071A3D;
+  --color-primary-electric: #0F52FF;
+  --color-primary-gold: #D4AF37;
+  --color-bg-dark: #0B1020;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-montserrat: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-card {
+  background: linear-gradient(135deg, rgba(15, 82, 255, 0.1), transparent);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+}
+
+.theme-badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+}
+
+.theme-cat-item {
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.theme-cat-item:hover {
+  border-bottom-color: var(--color-primary-electric);
+  background: rgba(255,255,255,0.07);
+}
+
+.theme-radial-bg {
+  background: radial-gradient(circle at top right, var(--color-primary-navy), var(--color-bg-dark));
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #FFFFFF, var(--color-primary-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
